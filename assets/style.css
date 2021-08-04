@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #000000;
+}
+
+header {
+  position: fixed;
+  top: 3%;
+  left: 3%;
+  color: white;
+  text-align: center;
+  font-family: 'Prompt', sans-serif;
+}
+
+header h1 {
+  font-size: 60px;
+}
+
+header div {
+  display: flex;
+  font-family: 'Prompt', sans-serif;
+  font-size: 20px;
+}
+
+header div ul {
+  position: fixed;
+  text-align: right;
+  list-style-type: none;
+  top: 3%;
+  right: 3%;
+}
+
+header div ul li {
+  margin: 0 0 0 25px;
+  font-weight: 200;
+}
+
+p {
+  font-family: 'Prompt', sans-serif;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  color: rgb(2, 80, 248);
+}
+
+.nav:hover {
+  color: white;
+}
+
+p {
+  font-size: 16px;
+}
+
+.hero {
+  height: 800px;
+  width: 100%;
+  background-image: url("../assets/images/bass2.jpeg");
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0 15px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin: 0 -5px;
+  margin-top: 12em;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: center;
+  background-color: #00bb83;
+  margin-bottom: 5em;
+  border-radius: 5px;
+}
+
+.card-title {
+  font-size: 20px;
+}
+
+img.thumbnail {
+  width: 100%;
+  height: auto;
+}
+
+.about {
+  margin-top: 10em;
+}
+
+.about p {
+  color: white;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* footer p {
+  padding: 30px 30px 15px 30px;
+  clear: both;
+  font-family: 'Prompt', sans-serif;
+  text-align: center;
+  color: white;
+  position: fixed;
+  bottom: 30px;
+} */
+
+footer p {
+  position: fixed;
+  left: 0;
+  bottom: 10px;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+/* footer h2 {
+  font-size: 11px;
+  position: relative;
+  bottom: 7px;
+  margin-left: 7px;
+  color: white;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 500;
+} */
+
+footer h2 {
+  position: fixed;
+  left: 7px;
+  bottom: 7px;
+  color: white;
+  text-align: center;
+  font-size: 11px;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 500;
+}
+
+footer h2 a {
+  text-decoration: none;
+  color: white;
+}
+
+footer h2 a:hover {
+  color:rgb(2, 80, 248);
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(219, 219, 219); 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(72, 114, 250); 
+}
